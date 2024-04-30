@@ -1,0 +1,71 @@
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+  
+body{
+    background: linear-gradient(140deg, rgba(51,76,170,1) 0%, rgba(129,204,174,1) 100%);
+    background-repeat: no-repeat;
+}
+.main{
+    height:100vh;
+    width: 100%;
+}
+
+.headermain{
+    h1{
+        font-family: "Noto Sans", sans-serif;
+    }
+}
+.mycontainer{
+    width: 90%;
+    margin:0 auto;
+}
+.maincard{
+    backdrop-filter: blur(15px);
+    transition:0.4s;
+    &:hover{
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transform: scale(1.01);
+    }
+    img{
+        border-radius: 50%;
+    }
+}
+.divwr{
+    position: relative;
+    .overlayicon{
+        position:absolute;
+        top: -4px;
+        right: -3px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        z-index: 999;
+        img{
+            opacity:0.7;
+        }
+    }
+}
+.topbutton{
+    background: transparent;
+    border:1px solid #fff;
+    color:#fff;
+    transition:0.3s;
+    &:hover{
+        background-color: #7a7a7a;
+        border-color: #7a7a7a;
+        
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    h3{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+        font-size: 17px;
+    }
+}
